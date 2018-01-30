@@ -38,3 +38,33 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.slogan--info {
+  color: #fff;
+  margin-bottom: 80px;
+  
+  &::before {
+    background-color: @blue;
+  }
+  
+  .slogan__wrapper {
+    padding-left: 250px;
+    padding-right: 260px;
+  }
+}
+
+.slogan__btn {
+  font-size: 21px;
+  text-transform: uppercase;
+  color: @blue;
+  width: 233px;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    color: @grey;
+    transition: ease-out 0.3s;
+  }
+}

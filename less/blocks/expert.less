@@ -1,0 +1,46 @@
+.expert {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 60px;
+  
+  h2::before {
+    content: "03";
+  }
+}
+
+.expert__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.expert__list {
+  width: 470px;
+  
+  h3 {
+    margin-top: 0;
+    color: @blue;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  li {
+    margin-bottom: 40px;
+  }
+}
+
+.expert__btn {
+  width: 160px;
+  height: 50px;
+  color: #969da5;
+  background-color: rgba(150, 157, 165, 0.2);
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.11);
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: @blue;
+    transition: ease-out 0.3s;
+  }
+}

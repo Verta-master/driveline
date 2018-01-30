@@ -1,0 +1,41 @@
+.diagnostic {
+  padding-top: 130px;
+  margin-bottom: 180px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  
+  h2 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  p {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: ~"calc(50% + 585px)";
+    height: 534px;
+    border-radius: 4px;
+    background-color: rgb(31, 77, 161);
+    background-image: url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
+  }
+  
+  .form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
