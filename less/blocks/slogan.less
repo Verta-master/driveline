@@ -1,0 +1,40 @@
+.slogan {
+  position: relative;
+  padding-top: 15px;
+  margin-bottom: 25px;
+  color: #616569;
+  font-size: 21px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: ~"calc(50% + 585px)";
+    height: 114px;
+    border-radius: 4px;
+    background-color: rgb(150, 157, 165);
+  }
+}
+
+.slogan__link {
+  width: 185px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: rgb(105, 109, 114);
+}
+
+.slogan__wrapper {
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
