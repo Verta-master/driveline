@@ -1,9 +1,16 @@
 .menu__btn {
+  margin-left: 52px;
+  margin-right: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  letter-spacing: 0.05em;
   
   svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    padding-bottom: 2px;
     fill: rgba(255, 255, 255, 0.5);
     transition: ease-out 0.3s;
   }
@@ -27,25 +34,16 @@
   left: 0;
   right: 0;
   background-color: @blue-dark;
-  
-  &::after {
-    content: "";
-    position: absolute;
-    top: -7px;
-    left: 30%;
-    width: 20px;
-    height: 20px;
-    background-color: @blue-dark;
-    transform: rotate(45deg);
-  }
 }
 
 .menu__list {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   
   a {
+    letter-spacing: 0.05em;
     color: rgba(255,255,255,0.5);
     transition: color ease-out 0.3s;
   }
@@ -55,11 +53,22 @@
     color: rgba(255,255,255,1);
     transition: color ease-out 0.3s;
   }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 335px;
+    width: 20px;
+    height: 20px;
+    background-color: @blue-dark;
+    transform: rotate(45deg);
+  }
 }
 
 .menu__item {
   min-height: 50px;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  margin-right: 55px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  margin-right: 58px;
 }

@@ -1,19 +1,19 @@
 .slogan {
   position: relative;
   padding-top: 15px;
-  margin-bottom: 25px;
   color: #616569;
   font-size: 21px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
   
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     right: 0;
-    z-index: -1;
+    z-index: 0;
     width: ~"calc(50% + 585px)";
     height: 114px;
     border-radius: 4px;
@@ -32,24 +32,26 @@
 }
 
 .slogan__wrapper {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .slogan--info {
   color: #fff;
-  margin-bottom: 80px;
+  margin-bottom: 110px;
   
   &::before {
     background-color: @blue;
   }
   
   .slogan__wrapper {
-    padding-left: 250px;
-    padding-right: 260px;
+    padding-left: 285px;
+    padding-right: 290px;
   }
 }
 
