@@ -1,12 +1,6 @@
-var navMain = document.querySelector(".menu");
-var navToggle = document.querySelector(".menu__btn");
-
-navToggle.addEventListener("click", function() {
-  if (navMain.classList.contains("menu--closed")) {
-    navMain.classList.remove("menu--closed");
-    navMain.classList.add("menu--opened");
-  } else {
-    navMain.classList.add("menu--closed");
-    navMain.classList.remove("menu--opened");
-  }
+//Mobile menu
+$('.menu__btn').click(function() {
+  $(this).next().slideToggle();
+  $('.menu').toggleClass('menu--closed');
+  $('.menu').toggleClass('menu--opened');
 });

@@ -11,9 +11,9 @@
   <header class="header">
     <div class="header__top">
       <div class="wrapper header__wrapper">
-        <a href="Tel:+7057404335">Phone: (705)-740-4335</a>
+        <a href="Tel:+7057404335">Phone: <span>(705)-740-4335</span></a>
         <address>Address: 1994 Bensfort rd. Peterborough, Ontario, K9J6X7</address>
-        <a href="mailto:">Email: larrylafonte@actiondriveline.ca</a>
+        <a href="mailto:">Email: <span>larrylafonte@actiondriveline.ca</span></a>
       </div>
     </div>
     <div class="header__bottom">
@@ -21,10 +21,15 @@
         <div class="logo">
           <img src="img/logo.png" alt="Logo" width="117" height="35">
         </div>
-        <nav class="menu">
-          <button type="button" class="menu__btn">local expert in</button>
+        <nav class="menu menu--closed">
+          <button type="button" class="menu__btn">local expert in
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+          </button>
           <div class="menu__wrap">
-            <ul class="menu__list">
+            <ul class="menu__list wrapper">
               <li class="menu__item">
                 <a href="#" class="menu__link">TRANSMISSION</a>
               </li>
@@ -45,7 +50,7 @@
         </nav>
         <a href="#">contact us</a>
         <a href="Tel:+7057404335">(705)-740-4335</a>
-        <button type="button" class="btn bth__call"></button>
+        <button type="button" class="btn bth__call">Request a call</button>
       </div>
     </div>
   </header>
@@ -210,6 +215,7 @@
     </div>
   </footer>
   
+  <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
   <script>
