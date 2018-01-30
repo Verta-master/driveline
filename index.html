@@ -108,15 +108,15 @@
         <img src="img/img-1.jpg" alt="action driveline" width="738" height="864">
       </figure>
       <div class="why__block">
-        <h2>why <span>action driveline</span>?</h2>
+        <h2 class="title">why <span>action driveline</span>?</h2>
         <p>Larry Lafonte, owner/operator and veteran of auto repair industry with over 27 years of experience, 25 of which specializes in driveline repairs. In almost three decade of driveline repairs there are not a maker or an issue that he haven’t seen or fix before. When clients choose Action Driveline they connect directly with repair specialist, Larry Lafonte will go above and beyond industry standards to accommodate customer with complimentary pick up, or free towing. Passionate for mechanics he can talk in lengths about repairs and give sounding recommendations. Action Driveline saves clients hundreds of dollars by getting straight to the problem, giving lengthy warranty and repairing parts that inexperience mechanics insist on replacing.</p>
         <ul class="why__list">
-          <li>25 years specializing in transmission and driveline repairs 21 training certificates in auto industry</li>
-          <li>1 year/20000 km warranty*</li>
-          <li>Free Towing (40km limit)*</li>
-          <li>Free Estimate</li>
-          <li>Free Engine light Diagnostic</li>
-          <li>Complimentary pick up drop off For all repairs</li>
+          <li>&bull; 25 years specializing in transmission and driveline repairs 21 training certificates in auto industry</li>
+          <li>&bull; 1 year/20000 km warranty*</li>
+          <li>&bull; Free Towing (40km limit)*</li>
+          <li>&bull; Free Estimate</li>
+          <li>&bull; Free Engine light Diagnostic</li>
+          <li>&bull; Complimentary pick up drop off For all repairs</li>
         </ul>
         <button type="button" class="btn why__btn">free estimate</button>
         <p class="why__comment">*For all major repairs</p>
@@ -124,8 +124,8 @@
     </section>
     
     <section class="review">
-      <div class="wrapper">
-        <h2>what customers say about us</h2>
+      <div class="wrapper review__wrapper">
+        <h2 class="title">what customers say about us</h2>
         <div class="swiper-container review__slider">
           <ul class="swiper-wrapper">
             <li class="swiper-slide review__slide">
@@ -137,7 +137,24 @@
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
               </div>
             </li>
-            
+            <li class="swiper-slide review__slide">
+              <figure class="review__img">
+                <img src="img/photo.jpg" alt="review" width="170" height="170">
+              </figure>
+              <div class="review__text">
+                <p class="review__author">DMITRY</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+              </div>
+            </li>
+            <li class="swiper-slide review__slide">
+              <figure class="review__img">
+                <img src="img/photo.jpg" alt="review" width="170" height="170">
+              </figure>
+              <div class="review__text">
+                <p class="review__author">DMITRY</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+              </div>
+            </li>
           </ul>
           <div class="swiper-button-prev review__prev"></div>
           <div class="swiper-button-next review__next"></div>
@@ -168,7 +185,7 @@
     </section>
     
     <section class="expert wrapper">
-      <h2>local expert in</h2>
+      <h2 class="title">local expert in</h2>
       <div class="expert__block">
         <figure class="expert__img">
           <img src="img/transmission.jpg" alt="local expert" width="568" height="1029">
@@ -224,8 +241,8 @@
   <script>
     var mySwiper = new Swiper ('.review__slider', {
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.review__next',
+        prevEl: '.review__prev',
       },
     });
   </script>
