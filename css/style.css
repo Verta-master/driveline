@@ -477,10 +477,8 @@ h2 {
   background-color: #2b71f5;
 }
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  width: 100%;
   z-index: 1000;
 }
 .header__wrapper {
@@ -550,7 +548,7 @@ h2 {
   margin-right: 60px;
 }
 .promo {
-  margin-top: 295px;
+  margin-top: 165px;
   margin-bottom: 170px;
   position: relative;
 }
