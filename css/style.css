@@ -1263,6 +1263,77 @@ h2 {
   margin-top: 33px;
   background-color: #2b71f5;
 }
+.contacts {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.contacts a,
+.contacts address {
+  color: #a8a7a7;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+.contacts a span,
+.contacts address span {
+  color: #70757b;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.contacts a:hover span {
+  color: #2b71f5;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.contacts h1 {
+  letter-spacing: 0.08em;
+}
+.contacts h1::before {
+  content: "01";
+}
+.contacts h1::after {
+  bottom: -15px;
+}
+.contacts__data {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.contacts__btn {
+  width: 212px;
+  height: 50px;
+  margin-top: 37px;
+  background-color: #2b71f5;
+}
+.contacts__wrapper {
+  position: relative;
+}
+.contacts__block {
+  position: absolute;
+  top: 42px;
+  left: 130px;
+  max-width: 420px;
+}
+.contacts__block p {
+  max-width: 300px;
+}
+.contacts__map {
+  width: 944px;
+  height: 620px;
+  margin-left: auto;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1900px) {
+  .contacts__map {
+    width: 800px;
+  }
+}
+@media (max-width: 1400px) {
+  .contacts__block {
+    max-width: 300px;
+  }
+}
 @media (max-width: 1229px) {
   .review::before,
   .slogan::before,
@@ -1300,6 +1371,12 @@ h2 {
     display: block;
     max-width: none;
     height: 100%;
+  }
+  .contacts__map {
+    width: 60%;
+  }
+  .contacts__block {
+    left: 60px;
   }
 }
 @media (max-width: 1022px) {
@@ -1386,6 +1463,16 @@ h2 {
   .slogan--info .slogan__wrapper {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .contacts__block {
+    position: static;
+    padding: 50px;
+    padding-top: 0;
+    max-width: none;
+  }
+  .contacts__map {
+    width: 100%;
+    margin-right: auto;
   }
 }
 @media (max-width: 766px) {
