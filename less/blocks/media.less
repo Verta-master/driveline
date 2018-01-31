@@ -37,6 +37,12 @@
   .why__img {
     left: -150px;
   }
+  
+  .internal__img img {
+    display: block;
+    max-width: none;
+    height: 100%;
+  }
 }
 
 //----------------------
@@ -317,5 +323,33 @@
   .menu__list {
     flex-direction: column;
     align-items: flex-start;
+  }
+  
+  .internal {
+    padding-top: 40px;
+    
+    h1 {
+      font-size: 24px;
+      line-height: 1.2;
+      
+      &::before {
+        bottom: 0;
+      }
+      
+      &::after {
+        bottom: -18px;
+      }
+    }
+  }
+  
+  .internal__content {
+    padding: 0;
+  }
+  
+  .internal__title {
+    top: 45px;
+    left: 30px;
+    width: auto;
+    padding-right: 15px;
   }
 }
