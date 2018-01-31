@@ -147,7 +147,7 @@
 }
 
 //-----------------------------
-@media (max-width: 700px) {
+@media (max-width: 766px) {
   .wrapper {
     padding-left: 10px;
     padding-right: 10px;
@@ -162,6 +162,12 @@
   .header__phone,
   .header__contact {
     display: none;
+  }
+  
+  .header__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .promo h1 {
@@ -211,6 +217,7 @@
     }
   }
   
+  .slogan__btn,
   .slogan__link {
     margin-left: auto;
     margin-right: auto;
@@ -255,6 +262,11 @@
     }
   }
   
+  .review__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .diagnostic {
     padding-top: 70px;
     padding-bottom: 50px;
@@ -295,5 +307,15 @@
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  
+  .menu__list::after {
+    right: 15px;
+    left: auto;
+  }
+  
+  .menu__list {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
