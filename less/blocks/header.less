@@ -45,6 +45,34 @@
   }
 }
 
+.header__more {
+  display: none;
+  padding-top: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: ease-out 0.3s;
+  
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: #969da5;
+    transition: ease-out 0.3s;
+  }
+  
+  &:hover,
+  &:active {
+    svg {
+      fill: @blue;
+      transition: ease-out 0.3s;
+    }
+  }
+  
+  &--rotate {
+    transform: rotate(180deg);
+    transition: ease-out 0.3s;
+  }
+}
+
 .header__bottom {
   width: 100%;
   min-height: 70px;
