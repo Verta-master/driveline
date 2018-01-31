@@ -27,6 +27,11 @@ function onScroll(event){
   var scrollPos = $(document).scrollTop() + 150;
   if (scrollPos > 150) {
     $('.header__bottom').addClass('header__bottom--shadow');
+    if ($('.menu').hasClass('menu--closed')) {
+      $('.menu__btn').next().slideUp();
+      $('.menu').removeClass('menu--closed');
+      $('.menu').addClass('menu--opened');
+    }
   } else {
     $('.header__bottom').removeClass('header__bottom--shadow');
   }

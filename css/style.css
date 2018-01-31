@@ -1425,7 +1425,6 @@ h2 {
     font-size: 0;
     width: 30px;
     height: 30px;
-    background-image: url(../img/ic_menu.svg);
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: center;
@@ -1445,7 +1444,13 @@ h2 {
         flex-wrap: wrap;
   }
   .menu--opened .menu__btn {
+    background-image: url(../img/ic_menu.svg);
+  }
+  .menu--closed .menu__btn {
     background-image: url(../img/ic_close.svg);
+  }
+  .menu__wrap {
+    display: none;
   }
   .form {
     width: 100%;
