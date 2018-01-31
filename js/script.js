@@ -17,3 +17,17 @@ $(document).ready(function(){
     topSpacing: 0
   });
 });
+
+//Scroll for header
+$(document).ready(function () {
+  $(document).on("scroll", onScroll);
+});
+
+function onScroll(event){
+  var scrollPos = $(document).scrollTop() + 150;
+  if (scrollPos > 150) {
+    $('.header__bottom').addClass('header__bottom--shadow');
+  } else {
+    $('.header__bottom').removeClass('header__bottom--shadow');
+  }
+}
