@@ -1,0 +1,70 @@
+.contacts {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  
+  a,
+  address {
+    color: #a8a7a7;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    
+    span {
+      color: #70757b;
+      transition: ease-out 0.3s;
+    }
+  }
+  
+  a:hover span {
+    color: @blue;
+    transition: ease-out 0.3s;
+  }
+  
+  h1 {
+    letter-spacing: 0.08em;
+    
+    &::before {
+      content: "01";
+    }
+    
+    &::after {
+      bottom: -15px;
+    }
+  }
+}
+
+.contacts__data {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.contacts__btn {
+  width: 212px;
+  height: 50px;
+  margin-top: 37px;
+  background-color: @blue;
+}
+
+.contacts__wrapper {
+  position: relative;
+}
+
+.contacts__block {
+  position: absolute;
+  top: 42px;
+  left: 130px;
+  max-width: 420px;
+  
+  p {
+    max-width: 300px;
+  }
+}
+
+.contacts__map {
+  width: 944px;
+  height: 620px;
+  margin-left: auto;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
