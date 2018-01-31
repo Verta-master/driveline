@@ -1,0 +1,299 @@
+@media (max-width: 1229px) {
+  .review::before,
+  .slogan::before,
+  .diagnostic::before,
+  .wrapper {
+    width: 100%;
+  }
+  
+  .step__item--active,
+  .header__top .header__wrapper {
+    flex-wrap: wrap;
+  }
+  
+  .form {
+    margin-right: auto;
+  }
+  
+  .review__wrapper {
+    padding-left: 60px;
+  }
+  
+  .header__top .header__wrapper,
+  .slogan__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .slogan--info .slogan__wrapper {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .why__block {
+    left: 50%;
+  }
+  
+  .why__img {
+    left: -150px;
+  }
+}
+
+//----------------------
+@media (max-width: 1022px) {
+  .header__phone {
+    margin: 0;
+  }
+  
+  .menu__btn {
+    margin: 0;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/ic_menu.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    svg {
+      display: none;
+    }
+    
+    &:hover,
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  
+  .menu__list::after {
+    left: 192px;
+  }
+  
+  .menu__list {
+    flex-wrap: wrap;
+  }
+  
+  .menu--opened {
+    .menu__btn {
+      background-image: url(../img/ic_close.svg);
+    }
+  }
+  
+  .form {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .form__field,
+  .form__btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  .slogan {
+    p {
+      max-width: 60%;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  
+  .why {
+    margin-bottom: 0;
+  }
+  
+  .why__block {
+    position: static;
+    max-width: none;
+    padding-left: 20px;
+  }
+  
+  .why__img {
+    width: 50%;
+    right: 0;
+    bottom: -20px;
+    left: auto;
+    top: auto;
+  }
+  
+  .why__list {
+    max-width: 400px;
+  }
+  
+  .review__text {
+    width: 450px;
+  }
+  
+  .review__feedback {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  
+  .expert {
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+  
+  .footer__wrapper,
+  .slogan--info .slogan__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+//-----------------------------
+@media (max-width: 700px) {
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .header__top .header__wrapper {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .header__call,
+  .header__phone,
+  .header__contact {
+    display: none;
+  }
+  
+  .promo h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  
+  .promo {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+  
+  .step__item p {
+    max-width: 75%;
+  }
+  
+  .step__item--active p {
+    max-width: 55%;
+    margin-right: 0;
+  }
+  
+  .form__field,
+  .form__input {
+    width: 100%;
+  }
+  
+  .form {
+    padding-top: 10px;
+  }
+  
+  .slogan__wrapper {
+    display: block;
+    padding-bottom: 10px;
+  }
+  
+  .slogan {
+    background-color: #969da5;
+    
+    &::before {
+      display: none;
+    }
+    
+    p {
+      max-width: none;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .slogan__link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .why__block {
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+  
+  .why__img {
+    display: none;
+  }
+  
+  .review {
+    background-color: @blue;
+    
+    &::before {
+      display: none;
+    }
+  }
+  
+  .review__wrapper {
+    padding-left: 60px;
+  }
+  
+  .review__slide {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .review__text {
+    width: 100%;
+  }
+  
+  .review__feedback {
+    display: block;
+    padding-bottom: 20px;
+    
+    p {
+      text-align: center;
+    }
+  }
+  
+  .diagnostic {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin-bottom: 70px;
+    background-image: url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    &::before {
+      display: none;
+    }
+  }
+  
+  .expert {
+    padding-left: 60px;
+  }
+  
+  .expert__block {
+    display: block;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .expert__list {
+    width: 100%;
+  }
+  
+  .slogan--info {
+    background-color: @blue;
+    margin-bottom: 70px;
+  }
+  
+  .footer__wrapper {
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
