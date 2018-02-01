@@ -1581,7 +1581,7 @@ h2 {
     font-size: 13px;
   }
   .menu__list::after {
-    left: 192px;
+    left: 205px;
   }
   .menu__list {
     -ms-flex-wrap: wrap;
@@ -1709,21 +1709,7 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .logo {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .header__contact {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .menu {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    padding-right: 25px;
   }
   .promo h1 {
     font-size: 30px;
@@ -1866,8 +1852,7 @@ h2 {
     padding-bottom: 5px;
   }
   .menu__list::after {
-    right: 15px;
-    left: auto;
+    left: 48.5%;
   }
   .menu__list {
     -webkit-box-orient: vertical;
@@ -1933,5 +1918,10 @@ h2 {
   }
   .review__slider::before {
     left: 48%;
+  }
+}
+@media (max-width: 321px) {
+  .header__bottom {
+    padding-right: 10px;
   }
 }
