@@ -14,8 +14,8 @@
         <a href="Tel:+7057404335">Phone: <span>(705)-740-4335</span></a>
         <button type="button" class="header__more">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/>
-            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+            <path d="M0-.75h24v24H0z" fill="none"/>
           </svg>
         </button>
         <address class="header__address">Address: 1994 Bensfort rd. Peterborough, Ontario, K9J6X7</address>
@@ -33,6 +33,7 @@
               <path d="M0 0h24v24H0z" fill="none"/>
               <path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
             </svg>
+            <span>Services</span>
           </button>
           <div class="menu__wrap">
             <ul class="menu__list wrapper">
@@ -74,7 +75,7 @@
         Usually, the current errors can be erased, then again when the engine starts up and during operation they will again be felt. Mechanical diagnostics is performed if computer diagnostics fails, and the automatic gearbox malfunctions (shocks during shifting, jerks, gear breaks, slips in gear, small slips when switching from one gear to another).</p>
         <p>The diagnosis of automatic transmission is divided into computer (electronic) and mechanical diagnostics with TEST DRIVE (if possible). Computer (electronic) diagnostics is carried out by connecting a diagnostic scanner, through a diagnostic connector, to the control module of the automatic transmission and the engine, where current errors are detected that have been stored in memory during operation, or errors that have occurred as a result of an open circuit of solenoids (valves) incorrect transmission ratio (incorrect indications of input and output speed), slipping of the torque converter (bagel), etc. The readings of all sensors are checked with the engine running and compared with the permissible ones (the readings of the input and output speed sensors, the indication of the switching on and off of the solenoids, the oil temperature, the kick down performance, etc.)<br>
       Usually, the current errors can be erased, then again when the engine starts up and during operation they will again be felt. Mechanical diagnostics is performed if computer diagnostics fails, and the automatic gearbox malfunctions (shocks during shifting, jerks, gear breaks, slips in gear, small slips when switching from one gear to another).</p>
-        <a href="#" class="btn internal__btn">order service</a>
+        <button type="button" class="btn internal__btn" id="service">order service</button>
       </div>
     </section>
   </main>
@@ -86,8 +87,68 @@
     </div>
   </footer>
   
+<!-- Modal window -->
+  <div style="display: none;">
+    <div class="modal modal--call">
+      <h2>Request a call</h2>
+      <form action="#" method="post" class="form form--modal">
+        <div class="form__field">
+          <input type="text" name="name" id="name3" class="form__input">
+          <label for="name3" class="form__label">First Name</label>
+        </div>
+        <div class="form__field">
+          <input type="tel" name="phone" id="phone3" class="form__input">
+          <label for="phone3" class="form__label">Phone number</label>
+        </div>
+        <div class="form__field">
+          <input type="email" name="email" id="email3" class="form__input">
+          <label for="email3" class="form__label">Email</label>
+        </div>
+        <button type="submit" class="btn form__btn">send</button>
+      </form>
+      <button type="button" class="modal__close arcticmodal-close"></button>
+    </div>
+  </div>
+  
+  <div style="display: none;">
+    <div class="modal modal--service">
+      <h2>fuel system check</h2>
+      <form action="#" method="post" class="form form--modal">
+        <div class="form__field">
+          <input type="text" name="name" id="name4" class="form__input">
+          <label for="name4" class="form__label">First Name</label>
+        </div>
+        <div class="form__field">
+          <input type="tel" name="phone" id="phone4" class="form__input">
+          <label for="phone4" class="form__label">Phone number</label>
+        </div>
+        <div class="form__field">
+          <input type="email" name="email" id="email4" class="form__input">
+          <label for="email4" class="form__label">Email</label>
+        </div>
+        <button type="submit" class="btn form__btn">send</button>
+      </form>
+      <button type="button" class="modal__close arcticmodal-close"></button>
+    </div>
+  </div>
+
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+
+<!-- Modal window -->
+  <script>
+    $(".header__call").click(function(){
+      $(function() {
+        $(".modal--call").arcticmodal();
+      });
+    });
+    $("#service").click(function(){
+      $(function() {
+        $(".modal--service").arcticmodal();
+      });
+    });
+  </script>
 </body>
 </html>

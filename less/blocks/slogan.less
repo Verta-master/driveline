@@ -29,6 +29,13 @@
   align-items: center;
   border-radius: 4px;
   background-color: rgb(105, 109, 114);
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    background-color: #5f6265;
+    transition: ease-out 0.3s;
+  }
 }
 
 .slogan__wrapper {
@@ -67,6 +74,7 @@
   &:hover,
   &:active {
     color: @grey;
+    background-color: rgb(255, 255, 255);
     transition: ease-out 0.3s;
   }
 }

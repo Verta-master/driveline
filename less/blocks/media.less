@@ -53,6 +53,7 @@
     display: block;
     max-width: none;
     height: 100%;
+    width: auto;
   }
   
   .contacts__map {
@@ -73,11 +74,6 @@
   .menu__btn {
     margin: 0;
     font-size: 0;
-    width: 30px;
-    height: 30px;
-    background-size: 24px 24px;
-    background-repeat: no-repeat;
-    background-position: center;
     
     svg {
       display: none;
@@ -86,6 +82,11 @@
     &:hover,
     &:active {
       opacity: 0.7;
+    }
+    
+    span {
+      display: block;
+      font-size: 13px;
     }
   }
   
@@ -96,17 +97,7 @@
   .menu__list {
     flex-wrap: wrap;
   }
-  
-  .menu--opened {
-    .menu__btn {
-      background-image: url(../img/ic_menu.svg);
-    }
-  }
-  
-  .menu--closed .menu__btn {
-    background-image: url(../img/ic_close.svg);
-  }
-  
+    
   .menu__wrap {
     display: none;
   }
@@ -281,6 +272,10 @@
     margin-right: 0;
   }
   
+  .step__item--active .step__number {
+    margin-right: 10px;
+  }
+  
   .form__field,
   .form__input {
     width: 100%;
@@ -352,20 +347,25 @@
   }
   
   .review__prev {
-    left: ~"calc(50% - 40px)";
+    left: ~"calc(49% - 40px)";
   }
   
   .review__next {
-    left: ~"calc(50% + 20px)";
+    left: ~"calc(49% + 20px)";
   }
   
   .review__slider::before {
-    left: 50%;
+    left: 49%;
+  }
+  
+  .review__slider {
+    padding-bottom: 80px;
   }
   
   .review__feedback {
     display: block;
     padding-bottom: 20px;
+    margin-top: 80px;
     
     p {
       text-align: center;
@@ -464,12 +464,43 @@
     top: 45px;
     left: 30px;
     width: auto;
+    padding-left: 0;
     padding-right: 15px;
+  }
+  
+  .modal {
+    width: 260px;
+    padding: 25px 10px;
+  }
+  
+  .modal__close {
+    width: 30px;
+    height: 30px;
+    right: -40px;
+  }
+  
+  .form--modal {
+    margin-top: 0;
+    padding: 0;
   }
 }
 
 @media (max-width: 766px) and (orientation: landscape) {
   .menu__list li {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 481px) {
+  .review__prev {
+    left: ~"calc(48% - 40px)";
+  }
+  
+  .review__next {
+    left: ~"calc(48% + 20px)";
+  }
+  
+  .review__slider::before {
+    left: 48%;
   }
 }

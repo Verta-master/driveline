@@ -9,12 +9,36 @@
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
   border: 3px solid @blue;
+  
+  &--modal {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: none;
+    margin-top: 50px;
+    
+    .form__field {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    
+    .form__input,
+    .form__btn {
+      width: 100%;
+    }
+    
+    .form__btn {
+      margin-top: 48px;
+    }
+  }
 }
 
 .form__btn {
   width: 119px;
   height: 50px;
   background-color: rgb(43, 113, 245);
+  transition: ease-out 0.3s;
 }
 
 .form__input {
